@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seller Onboarding – SakhiSell</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body data-page="seller-onboarding">
+    <div class="app">
+      <main class="phone">
+        <header class="topbar">
+          <div class="left">
+            <button class="icon-btn" type="button" data-back aria-label="Back">←</button>
+          </div>
+          <h1>Seller Onboarding</h1>
+        </header>
+
+        <div class="progress-row">
+          <div>Step 1 of 4</div>
+          <div style="color:var(--primary);font-weight:900">Basic Information</div>
+        </div>
+        <div class="progress" aria-label="Progress"><div style="width:25%"></div></div>
+
+        <section class="section">
+          <h2 style="margin:6px 0 14px;font-size:26px;font-weight:900">Enter Basic Information</h2>
+
+          <div class="label">Full Name</div>
+          <div class="field">
+            <input placeholder="Enter your full name" aria-label="Full name" />
+          </div>
+
+          <div class="label mt-14">Business Name <span class="muted2">(Optional)</span></div>
+          <div class="field">
+            <input placeholder="Enter business name" aria-label="Business name" />
+          </div>
+
+          <div class="label mt-14">Village / City</div>
+          <div class="field" style="border-radius:26px">
+            <input list="sellerCities" placeholder="Select your location" aria-label="Village or city" />
+            <datalist id="sellerCities">
+              <option value="Hyderabad"></option>
+              <option value="Vijayawada"></option>
+              <option value="Warangal"></option>
+              <option value="Visakhapatnam"></option>
+            </datalist>
+          </div>
+          <div class="muted2 small" style="margin-top:8px">
+            Choose from 4 suggestions or type your own.
+          </div>
+
+          <div class="label mt-18">What do you want to sell?</div>
+          <div class="choice-grid">
+            <a class="choice" href="seller-category.html" style="text-decoration:none">
+              <div class="ico" aria-hidden="true"></div>
+              <div class="name">Products</div>
+            </a>
+            <a class="choice" href="seller-category.html" style="text-decoration:none">
+              <div class="ico topic-ico services" aria-hidden="true"><span class="topic-marker">🛠</span></div>
+              <div class="name">Services</div>
+            </a>
+            <a class="choice" href="seller-category.html" style="text-decoration:none">
+              <div class="ico topic-ico preowned" aria-hidden="true"><span class="topic-marker">♻</span></div>
+              <div class="name">Pre-Owned</div>
+            </a>
+            <a class="choice" href="seller-category.html" style="text-decoration:none">
+              <div class="ico" aria-hidden="true"></div>
+              <div class="name">Learning</div>
+            </a>
+          </div>
+
+          <div class="mt-18">
+            <button class="btn btn-primary" type="button" data-go="seller-category.html">Continue →</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>
+

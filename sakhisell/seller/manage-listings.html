@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manage Listings – SakhiSell</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body data-page="manage-listings">
+    <div class="app">
+      <main class="phone">
+        <header class="topbar">
+          <div class="left">
+            <button class="icon-btn" type="button" data-back aria-label="Back">←</button>
+          </div>
+          <h1>Manage Listings</h1>
+        </header>
+
+        <section class="section">
+          <div class="progress-row">
+            <div class="tag">Active</div>
+            <div class="tag" style="background:rgba(244,180,0,.14);border-color:rgba(244,180,0,.30);color:#b97c00">Draft</div>
+            <div class="tag" style="background:rgba(255,77,109,.12);border-color:rgba(255,77,109,.25);color:var(--danger)">Paused</div>
+          </div>
+
+          <div class="list mt-14">
+            <div class="row">
+              <div class="avatar"></div>
+              <div class="meta">
+                <div class="t">Handcrafted Silk Saree</div>
+                <div class="d">₹3,450 · Qty 1</div>
+              </div>
+              <span class="tag good">LIVE</span>
+            </div>
+            <div class="row">
+              <div class="avatar"></div>
+              <div class="meta">
+                <div class="t">Private Yoga Session</div>
+                <div class="d">₹499 / session</div>
+              </div>
+              <span class="tag">LIVE</span>
+            </div>
+            <div class="row">
+              <div class="avatar"></div>
+              <div class="meta">
+                <div class="t">Intro to UI Design</div>
+                <div class="d">₹1,999</div>
+              </div>
+              <span class="tag warn">DRAFT</span>
+            </div>
+          </div>
+
+          <div class="mt-18">
+            <button class="btn btn-primary" type="button" data-go="seller-category.html">Add New Listing</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>
+
