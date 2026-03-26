@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>List New Product – SakhiSell</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="product">
+    <div class="app">
+      <main class="phone">
+        <header class="topbar">
+          <div class="left">
+            <button class="icon-btn" type="button" data-back aria-label="Back">←</button>
+          </div>
+          <h1>List New Product</h1>
+        </header>
+
+        <div class="progress" aria-label="Progress"><div style="width:33%"></div></div>
+
+        <section class="section">
+          <div class="label">Product Media</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <div class="card" style="border-radius:22px;overflow:hidden;background:rgba(255,111,143,.10);height:120px;position:relative">
+              <div style="position:absolute;inset:0;display:grid;place-items:center;color:rgba(44,44,44,.5);font-weight:900">
+                PHOTO
+              </div>
+              <button class="icon-btn" type="button" aria-label="Remove" onclick="return false;" style="position:absolute;top:6px;right:6px;background:rgba(255,255,255,.7);border:1px solid rgba(243,207,217,.85)">×</button>
+            </div>
+            <button class="card" type="button" onclick="return false;" style="border-radius:22px;height:120px;border:2px dashed rgba(255,111,143,.35);background:rgba(255,255,255,.6);cursor:pointer">
+              <div class="center" style="font-weight:900;color:var(--primary)">ADD PHOTO</div>
+            </button>
+          </div>
+
+          <div class="label mt-14">Product Title</div>
+          <div class="field">
+            <input placeholder="e.g. Handcrafted Silk Saree" aria-label="Product title" />
+          </div>
+
+          <div class="label mt-14">Price (₹)</div>
+          <div class="field">
+            <input inputmode="decimal" placeholder="₹ 0.00" aria-label="Price" />
+          </div>
+
+          <div class="label mt-14">Description</div>
+          <div class="card" style="padding:12px 14px;border-radius:22px">
+            <textarea rows="4" style="width:100%;border:0;outline:none;resize:none;font:inherit;color:var(--text);background:transparent" placeholder="Tell buyers about the material, size, and condition..." aria-label="Description"></textarea>
+          </div>
+
+          <div class="progress-row mt-18">
+            <div class="label" style="margin:0;letter-spacing:1px;color:rgba(255,111,143,.85)">INVENTORY &amp; SHIPPING</div>
+            <div class="tag" style="background:rgba(255,111,143,.08)">OPTIONAL</div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px">
+            <div>
+              <div class="label">Quantity</div>
+              <div class="field">
+                <input inputmode="numeric" value="1" aria-label="Quantity" />
+              </div>
+            </div>
+            <div>
+              <div class="label">Delivery Option</div>
+              <div class="field">
+                <select aria-label="Delivery option">
+                  <option>Standard Shipping</option>
+                  <option>Express Shipping</option>
+                  <option>Pickup</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:12px;margin-top:18px">
+            <button class="btn btn-ghost" type="button" style="width:40%" onclick="return false;">👁 Preview</button>
+            <button class="btn btn-primary" type="button" style="width:60%" data-go="dashboard.html">Next Step →</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home – SakhiSell</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="app">
+      <main class="phone">
+        <header class="topbar">
+          <div class="left">
+            <button class="icon-btn" type="button" data-back aria-label="Back">←</button>
+          </div>
+          <h1>SakhiSell</h1>
+        </header>
+
+        <div class="hero" style="padding-top:4px">
+          <h2 style="font-size:34px">Welcome to<br />SakhiSell</h2>
+          <p>What would you like to do?</p>
+        </div>
+
+        <section class="tiles">
+          <a class="tile" href="seller-onboarding.html" style="text-decoration:none">
+            <div class="badge" aria-hidden="true"></div>
+            <div class="title">Sell on SakhiSell</div>
+            <p class="sub">Start or grow your business</p>
+            <div class="go" aria-hidden="true">→</div>
+          </a>
+          <a class="tile" href="buyer-home.html" style="text-decoration:none">
+            <div class="badge topic-ico services" aria-hidden="true"><span class="topic-marker">🛠</span></div>
+            <div class="title">Buy / Book Services</div>
+            <p class="sub">Find products &amp; services nearby</p>
+            <div class="go" aria-hidden="true">→</div>
+          </a>
+        </section>
+
+        <nav class="bottom-nav" aria-label="Bottom navigation">
+          <div class="items">
+            <a class="nav-item active" data-nav="home" href="home.html">
+              <div class="ni" aria-hidden="true"></div>
+              Home
+            </a>
+            <a class="nav-item" data-nav="help" href="safety-center.html">
+              <div class="ni" aria-hidden="true"></div>
+              Help
+            </a>
+            <a class="nav-item" data-nav="profile" href="trust-verification.html">
+              <div class="ni" aria-hidden="true"></div>
+              Profile
+            </a>
+            <a class="nav-item" data-nav="dash" href="dashboard.html">
+              <div class="ni" aria-hidden="true"></div>
+              Seller
+            </a>
+          </div>
+        </nav>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+

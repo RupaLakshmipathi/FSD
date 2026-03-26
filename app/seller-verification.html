@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seller Verification – SakhiSell</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="seller-verification">
+    <div class="app">
+      <main class="phone">
+        <header class="topbar">
+          <div class="left">
+            <button class="icon-btn" type="button" data-back aria-label="Back">←</button>
+          </div>
+          <h1>Seller Verification</h1>
+          <div class="right">
+            <button class="icon-btn" type="button" aria-label="Help" onclick="return false;">?</button>
+          </div>
+        </header>
+
+        <div class="progress-row">
+          <div>Step 2: Identity Verification</div>
+          <div style="color:var(--primary);font-weight:900">40% Complete</div>
+        </div>
+        <div class="progress"><div style="width:40%"></div></div>
+
+        <section class="card section">
+          <div class="hero" style="padding-top:2px">
+            <div class="logo" style="width:78px;height:78px">
+              <div class="mark" aria-hidden="true"></div>
+            </div>
+            <h2 style="font-size:22px;margin-top:6px">Verify Your Identity<br />(Recommended)</h2>
+            <p>Build trust with customers by verifying your identity with SakhiSell secure verification.</p>
+          </div>
+
+          <div class="label">Aadhaar Number</div>
+          <div class="field">
+            <input inputmode="numeric" placeholder="0000 0000 0000" aria-label="Aadhaar number" />
+            <div style="width:18px;height:18px;border-radius:999px;border:1px solid rgba(243,207,217,.9)" aria-hidden="true"></div>
+          </div>
+          <div class="muted2 small" style="margin-top:8px">
+            Your Aadhaar number is encrypted and never stored permanently.
+          </div>
+
+          <label class="checkbox">
+            <input type="checkbox" />
+            <span>I agree to the identity verification terms and conditions for SakhiSell.</span>
+          </label>
+
+          <div class="mt-18">
+            <button class="btn btn-primary" type="button" data-go="trust-verification.html">Verify Aadhaar</button>
+          </div>
+
+          <div class="center mt-14">
+            <a href="dashboard.html" class="small muted" style="text-decoration:none;font-weight:900">Skip for Now</a>
+          </div>
+        </section>
+
+        <div class="divider" style="margin-top:16px">SECURE 256-BIT ENCRYPTION</div>
+
+        <nav class="bottom-nav" aria-label="Bottom navigation">
+          <div class="items">
+            <a class="nav-item" data-nav="home" href="home.html"><div class="ni"></div>HOME</a>
+            <a class="nav-item" data-nav="shop" href="buyer-home.html"><div class="ni"></div>SHOP</a>
+            <button class="fab" type="button" aria-label="Add" data-go="product-listing.html">+</button>
+            <a class="nav-item active" data-nav="verify" href="seller-verification.html"><div class="ni"></div>VERIFY</a>
+            <a class="nav-item" data-nav="profile" href="trust-verification.html"><div class="ni"></div>PROFILE</a>
+          </div>
+        </nav>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home – SakhiSell</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="buyer-home">
+    <div class="app">
+      <main class="phone">
+        <header class="topbar">
+          <h1>SakhiSell</h1>
+          <div class="right">
+            <button class="icon-btn" type="button" aria-label="Notifications" onclick="return false;">
+              <span aria-hidden="true" style="width:18px;height:18px;border-radius:7px;border:1px solid rgba(44,44,44,.28);display:inline-block"></span>
+            </button>
+          </div>
+        </header>
+
+        <section class="section">
+          <div class="field" style="border-radius:18px">
+            <div aria-hidden="true" style="width:16px;height:16px;border-radius:6px;border:1px solid rgba(44,44,44,.28);opacity:.65"></div>
+            <input placeholder="Search products, services, or tutors" aria-label="Search" />
+          </div>
+
+          <div class="progress-row mt-14">
+            <div class="tag" style="background:rgba(255,111,143,.08)">Nearby sellers</div>
+            <div class="muted small" style="font-weight:900">Today’s Deals</div>
+          </div>
+
+          <div class="progress-row mt-18">
+            <div class="label" style="margin:0">Categories</div>
+            <a class="small" href="#" style="color:var(--primary);font-weight:900;text-decoration:none" onclick="return false;">View all</a>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px">
+            <div class="card section center" style="padding:18px;border-radius:22px;background:rgba(255,111,143,.10)">
+              <div class="avatar" style="margin:0 auto 10px"></div>
+              <div style="font-weight:900">Products</div>
+            </div>
+            <div class="card section center" style="padding:18px;border-radius:22px;background:rgba(74,217,160,.16)">
+              <div class="avatar topic-avatar services" style="margin:0 auto 10px;background:rgba(74,217,160,.22)"><span class="topic-marker" aria-hidden="true">🛠</span></div>
+              <div style="font-weight:900">Services</div>
+            </div>
+            <div class="card section center" style="padding:18px;border-radius:22px;background:rgba(100,170,255,.14)">
+              <div class="avatar topic-avatar preowned" style="margin:0 auto 10px;background:rgba(100,170,255,.18)"><span class="topic-marker" aria-hidden="true">♻</span></div>
+              <div style="font-weight:900">Pre-Owned</div>
+            </div>
+            <div class="card section center" style="padding:18px;border-radius:22px;background:rgba(255,199,88,.20)">
+              <div class="avatar" style="margin:0 auto 10px;background:rgba(255,199,88,.24)"></div>
+              <div style="font-weight:900">Learning</div>
+            </div>
+          </div>
+
+          <div class="progress-row mt-18">
+            <div class="label" style="margin:0">Popular Near You</div>
+            <button class="icon-btn" type="button" aria-label="Filter" onclick="return false;" style="width:36px;height:36px;border:1px solid rgba(243,207,217,.85);background:rgba(255,255,255,.6)">⚙</button>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px">
+            <div class="card" style="border-radius:22px;overflow:hidden">
+              <div style="height:110px;background:rgba(255,111,143,.12)"></div>
+              <div style="padding:10px 12px">
+                <div class="small muted">0.8km</div>
+                <div style="font-weight:900">Handmade Ceramic Pot</div>
+                <div class="progress-row" style="margin-top:6px">
+                  <div style="font-weight:900;color:var(--primary)">$24.00</div>
+                  <div class="small muted">★ 4.8</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="border-radius:22px;overflow:hidden">
+              <div class="topic-thumb preowned" style="height:110px;background:rgba(0,0,0,.10);display:grid;place-items:center"><span class="topic-marker" aria-hidden="true">♻</span></div>
+              <div style="padding:10px 12px">
+                <div class="small muted">1.2km</div>
+                <div style="font-weight:900">Classic Leather Tote</div>
+                <div class="progress-row" style="margin-top:6px">
+                  <div style="font-weight:900;color:var(--primary)">$89.00</div>
+                  <div class="small muted">★ 4.9</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="border-radius:22px;overflow:hidden">
+              <div class="topic-thumb services" style="height:110px;background:rgba(120,210,170,.16);display:grid;place-items:center"><span class="topic-marker" aria-hidden="true">🛠</span></div>
+              <div style="padding:10px 12px">
+                <div class="small muted">0.3km</div>
+                <div style="font-weight:900">Private Yoga Session</div>
+                <div class="progress-row" style="margin-top:6px">
+                  <div style="font-weight:900;color:var(--primary)">$40/hr</div>
+                  <div class="small muted">★ 5.0</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="border-radius:22px;overflow:hidden">
+              <div style="height:110px;background:rgba(100,170,255,.16)"></div>
+              <div style="padding:10px 12px">
+                <div class="small muted">2.5km</div>
+                <div style="font-weight:900">Intro to UI Design</div>
+                <div class="progress-row" style="margin-top:6px">
+                  <div style="font-weight:900;color:var(--primary)">$120</div>
+                  <div class="small muted">★ 4.7</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <nav class="bottom-nav" aria-label="Bottom navigation">
+          <div class="items">
+            <a class="nav-item active" data-nav="buyer-home" href="buyer-home.html"><div class="ni"></div>Home</a>
+            <a class="nav-item" data-nav="orders" href="manage-orders.html"><div class="ni"></div>Orders</a>
+            <a class="nav-item" data-nav="wishlist" href="#" onclick="return false;"><div class="ni"></div>Wishlist</a>
+            <a class="nav-item" data-nav="profile" href="trust-verification.html"><div class="ni"></div>Profile</a>
+          </div>
+        </nav>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+

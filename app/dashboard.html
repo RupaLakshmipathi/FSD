@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard – SakhiSell</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="dash">
+    <div class="app">
+      <main class="phone">
+        <header class="topbar">
+          <div class="left">
+            <button class="icon-btn" type="button" data-back aria-label="Back">←</button>
+          </div>
+          <h1>SakhiSell</h1>
+          <div class="right">
+            <button class="icon-btn" type="button" aria-label="Notifications" onclick="return false;">
+              <span aria-hidden="true" style="width:18px;height:18px;border-radius:7px;border:1px solid rgba(44,44,44,.28);display:inline-block"></span>
+            </button>
+            <div class="avatar" style="width:34px;height:34px;border-radius:14px"></div>
+          </div>
+        </header>
+
+        <section class="section">
+          <h2 style="margin:8px 0 6px;font-size:26px;font-weight:900">Hello, Sunita</h2>
+          <p class="muted" style="margin:0 0 14px;font-size:13px">Here’s what’s happening with your shop today.</p>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <div class="card section" style="padding:14px;border-radius:22px">
+              <div class="muted small" style="font-weight:900">Today's Orders</div>
+              <div style="font-size:28px;font-weight:900;margin-top:6px">12</div>
+              <div class="small" style="color:var(--good);font-weight:900;margin-top:6px">+15% from yesterday</div>
+            </div>
+            <div class="card section" style="padding:14px;border-radius:22px">
+              <div class="muted small" style="font-weight:900">Monthly Earnings</div>
+              <div style="font-size:24px;font-weight:900;margin-top:6px">₹45,200</div>
+              <div class="small" style="color:var(--good);font-weight:900;margin-top:6px">+8% from last month</div>
+            </div>
+          </div>
+
+          <div class="label mt-18">Quick Actions</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <a class="card section center" href="product-listing.html" style="text-decoration:none;padding:18px;border-radius:22px">
+              <div class="avatar" style="margin:0 auto 10px"></div>
+              <div style="font-weight:900">Add Product</div>
+            </a>
+            <a class="card section center" href="#" onclick="return false;" style="text-decoration:none;padding:18px;border-radius:22px">
+              <div class="avatar" style="margin:0 auto 10px"></div>
+              <div style="font-weight:900">Manage Listings</div>
+            </a>
+            <a class="card section center" href="manage-orders.html" style="text-decoration:none;padding:18px;border-radius:22px">
+              <div class="avatar topic-avatar orders" style="margin:0 auto 10px"><span class="topic-marker" aria-hidden="true">📦</span></div>
+              <div style="font-weight:900">Orders</div>
+            </a>
+            <a class="card section center" href="#" onclick="return false;" style="text-decoration:none;padding:18px;border-radius:22px">
+              <div class="avatar" style="margin:0 auto 10px"></div>
+              <div style="font-weight:900">Sales Insights</div>
+            </a>
+          </div>
+
+          <div class="progress-row mt-18">
+            <div class="label" style="margin:0">Recent Orders</div>
+            <a class="small" href="manage-orders.html" style="color:var(--primary);font-weight:900;text-decoration:none">View All</a>
+          </div>
+
+          <div class="list mt-10">
+            <div class="row">
+              <div class="avatar topic-avatar orders"><span class="topic-marker" aria-hidden="true">📦</span></div>
+              <div class="meta">
+                <div class="t">Priya Sharma</div>
+                <div class="d">Handmade Silk Saree</div>
+              </div>
+              <span class="tag warn">PENDING</span>
+              <div style="font-weight:900">₹3,450</div>
+            </div>
+            <div class="row">
+              <div class="avatar topic-avatar orders"><span class="topic-marker" aria-hidden="true">📦</span></div>
+              <div class="meta">
+                <div class="t">Anita Desai</div>
+                <div class="d">Clay Pottery Set</div>
+              </div>
+              <span class="tag good">COMPLETED</span>
+              <div style="font-weight:900">₹1,200</div>
+            </div>
+            <div class="row">
+              <div class="avatar topic-avatar orders"><span class="topic-marker" aria-hidden="true">📦</span></div>
+              <div class="meta">
+                <div class="t">Meera Kapur</div>
+                <div class="d">Silver Jhumkas</div>
+              </div>
+              <span class="tag good">COMPLETED</span>
+              <div style="font-weight:900">₹850</div>
+            </div>
+          </div>
+        </section>
+
+        <nav class="bottom-nav" aria-label="Bottom navigation">
+          <div class="items">
+            <a class="nav-item active" data-nav="dash" href="dashboard.html"><div class="ni"></div>DASHBOARD</a>
+            <a class="nav-item" data-nav="orders" href="manage-orders.html"><div class="ni"></div>ORDERS</a>
+            <a class="nav-item" data-nav="list" href="product-listing.html"><div class="ni"></div>LISTINGS</a>
+            <a class="nav-item" data-nav="profile" href="trust-verification.html"><div class="ni"></div>PROFILE</a>
+          </div>
+        </nav>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
