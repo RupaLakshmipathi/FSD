@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marketplace – SakhiSell</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body data-page="marketplace">
+    <div class="app">
+      <main class="phone">
+        <header class="topbar">
+          <div class="left">
+            <button class="icon-btn" type="button" data-back aria-label="Back">←</button>
+          </div>
+          <h1>Marketplace</h1>
+        </header>
+
+        <section class="section">
+          <div class="field" style="border-radius:18px">
+            <div aria-hidden="true" style="width:16px;height:16px;border-radius:6px;border:1px solid rgba(44,44,44,.28);opacity:.65"></div>
+            <input placeholder="Search in marketplace" aria-label="Search marketplace" />
+          </div>
+
+          <div class="progress-row mt-14">
+            <div class="tag">Nearby</div>
+            <div class="tag" style="background:rgba(74,217,160,.16);border-color:rgba(74,217,160,.26);color:#138a57">🛠 Services</div>
+            <div class="tag" style="background:rgba(100,170,255,.14);border-color:rgba(100,170,255,.26);color:#2c6bd6">♻ Pre-Owned</div>
+            <div class="tag" style="background:rgba(255,199,88,.20);border-color:rgba(255,199,88,.30);color:#9c6a00">Learning</div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px">
+            <a class="card" href="product-details.html" style="border-radius:22px;overflow:hidden;text-decoration:none">
+              <div style="height:120px;background:rgba(255,111,143,.12)"></div>
+              <div style="padding:10px 12px">
+                <div style="font-weight:900">Handmade Ceramic Pot</div>
+                <div class="progress-row" style="margin-top:6px">
+                  <div style="font-weight:900;color:var(--primary)">$24.00</div>
+                  <div class="small muted">★ 4.8</div>
+                </div>
+              </div>
+            </a>
+            <a class="card" href="product-details.html" style="border-radius:22px;overflow:hidden;text-decoration:none">
+              <div class="topic-thumb preowned" style="height:120px;background:rgba(0,0,0,.10);display:grid;place-items:center"><span class="topic-marker" aria-hidden="true">♻</span></div>
+              <div style="padding:10px 12px">
+                <div style="font-weight:900">Classic Leather Tote</div>
+                <div class="progress-row" style="margin-top:6px">
+                  <div style="font-weight:900;color:var(--primary)">$89.00</div>
+                  <div class="small muted">★ 4.9</div>
+                </div>
+              </div>
+            </a>
+            <a class="card" href="product-details.html" style="border-radius:22px;overflow:hidden;text-decoration:none">
+              <div class="topic-thumb services" style="height:120px;background:rgba(120,210,170,.16);display:grid;place-items:center"><span class="topic-marker" aria-hidden="true">🛠</span></div>
+              <div style="padding:10px 12px">
+                <div style="font-weight:900">Private Yoga Session</div>
+                <div class="progress-row" style="margin-top:6px">
+                  <div style="font-weight:900;color:var(--primary)">$40/hr</div>
+                  <div class="small muted">★ 5.0</div>
+                </div>
+              </div>
+            </a>
+            <a class="card" href="product-details.html" style="border-radius:22px;overflow:hidden;text-decoration:none">
+              <div style="height:120px;background:rgba(100,170,255,.16)"></div>
+              <div style="padding:10px 12px">
+                <div style="font-weight:900">Intro to UI Design</div>
+                <div class="progress-row" style="margin-top:6px">
+                  <div style="font-weight:900;color:var(--primary)">$120</div>
+                  <div class="small muted">★ 4.7</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <nav class="bottom-nav" aria-label="Bottom navigation">
+          <div class="items">
+            <a class="nav-item" href="buyer-home.html"><div class="ni"></div>Home</a>
+            <a class="nav-item active" href="marketplace.html"><div class="ni"></div>Shop</a>
+            <a class="nav-item" href="cart.html"><div class="ni"></div>Cart</a>
+            <a class="nav-item" href="buyer-profile.html"><div class="ni"></div>Profile</a>
+          </div>
+        </nav>
+      </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>
+
