@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login – SakhiSell</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="login">
+    <div class="app">
+      <main class="phone">
+        <div class="hero">
+          <div class="logo"><div class="mark" aria-hidden="true"></div></div>
+          <h2>Welcome to SakhiSell</h2>
+          <p>Your local marketplace for everything beautiful</p>
+        </div>
+
+        <section class="pill" data-segmented>
+          <div class="segmented" role="group" aria-label="Language">
+            <button type="button" aria-pressed="false">తెలుగు</button>
+            <button type="button" aria-pressed="true">English</button>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="label">Phone Number</div>
+          <div class="field">
+            <div class="prefix">+91</div>
+            <input inputmode="numeric" maxlength="10" placeholder="Enter 10 digit number" aria-label="Phone number" />
+          </div>
+
+          <div class="mt-18">
+            <button class="btn btn-primary" type="button" data-go="otp-verification.html">Send OTP</button>
+          </div>
+
+          <div class="fineprint">
+            By continuing, you agree to SakhiSell’s<br />
+            <a href="#" onclick="return false;">Terms of Service</a> and
+            <a href="#" onclick="return false;">Privacy Policy</a>
+          </div>
+
+          <div class="divider">SAFE &amp; SECURE</div>
+
+          <div class="center mt-14">
+            <a href="signup.html" class="small" style="color:var(--primary);font-weight:900;text-decoration:none">New here? Sign up</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
